@@ -2,22 +2,19 @@
 
 // pega usuário e endereço
 function getUser(callback){
-    setTimeout(function (null, 
-    return {
-        name: 'John',
-        age: 20
-    }))
-}
+   setTimeout(function (){
+        return callback (null, {
+            id: 345,
+            name: 'John',
+            burn: new Date()    
+            })
+    }, 2000)
+ }
 
 function getAddress(idUser){
-    setTimeout()
-    return {
-        city: 'Canada',
-        street: 'new flower tower',
-        number: '123'
-        
-    }
+    setTimeout(()=> {
 
+    }) 
 }
 
 function getPhone(idUser){
@@ -25,6 +22,17 @@ function getPhone(idUser){
     return {
         ddd: '54',
         phone: '1134454534'
-    }
-
+    }, 1000
 }
+
+const user = getUser;
+const address = getAddress;
+const phone = getPhone;
+
+
+
+// ##  setTimeout(function (null, 
+//     return {
+//         name: 'John',
+//         age: 20
+//     }, 1000}
