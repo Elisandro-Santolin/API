@@ -54,8 +54,8 @@ getUser(function resolvedUser(error, user) {
         
         console.log(`
            Nome: ${user.name},
-           Endereço: ${adress.street},
-           Telefone: ${phone.phone}
+           Endereço: ${adress.region} ${adress.street},
+           Telefone: ${phone.ddd} ${phone.phone}
 
         `)
         })
