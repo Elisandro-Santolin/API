@@ -131,3 +131,5 @@ dist
 
 # DS_Store
 .Ds_store
+
+.vscode
