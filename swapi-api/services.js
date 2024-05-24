@@ -1,28 +1,20 @@
 const axios = require('axios');
-const URL = 'https://swapi.dev/people';
+const URL = 'https://swapi.dev/api/people';
 
 
 async function getPeople(name) {
-    const url = await axios.get(`${URL}people/1`);
+    const url = (`${URL}/?search=${name}&format=json`);
     const response =  await axios.get(url);
     return response.data;    
     // console.log(response.data);
-   
+ 
     }
-    .then(){
+    getPeople('r2')
 
-        c
-    }catch(function error){
-        console.log('error', error);
-    }
+    .then(function (retorno){
 
-
-
-
-
-
-
-module.exports = {
-    getPeople
-
-}
+        console.log(retorno);
+    })
+    .catch(function (erro){
+        console.error('deu ruim', erro)
+    });
