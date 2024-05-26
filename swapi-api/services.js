@@ -9,12 +9,16 @@ async function getPeople(name) {
     // console.log(response.data);
  
     }
-    getPeople('r2')
+    // getPeople('r2')
 
-    .then(function (retorno){
+    // .then(function (retorno){
 
-        console.log(retorno);
-    })
-    .catch(function (erro){
-        console.error('deu ruim', erro)
-    });
+    //     console.log(retorno);
+    // })
+    // .catch(function (erro){
+    //     console.error('deu ruim', erro)
+    // });
+
+module.exports = {
+    getPeople
+}
